@@ -593,6 +593,80 @@ img {
 .footer-team-link-item:focus svg {
   fill: var(--footer-color);
 }
+
+.footer-social-link {
+  margin-right: 93px;
+}
+
+.footer-email {
+  display: inline-block;
+  width: 570px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+}
+
+.footer-email-form {
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.footer-email-iput {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--herro-color);
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.footer-email-iput:focus,
+.footer-email-iput:hover {
+  border-color: var(--accent-color);
+}
+
+.footer-email-iput::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footer-link-contact-color);
+  outline: none;
+}
+
+.footer-email-btn {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding-left: 29px;
+  padding-right: 29px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--footer-color);
+}
+
+.footer-email-btn > svg {
+  margin-left: 10px;
+  fill: var(--footer-color);
+}
 /*=======END FOOTER=======*/
 
 /*========FILTER========*/
@@ -752,11 +826,21 @@ img {
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   height: 581px;
+  padding: 40px;
   background: var(--accent-link-social-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal > b {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
 }
 
 .modal-close-btn {
@@ -772,6 +856,19 @@ img {
   background-color: var(--footer-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
 }
 
 .is-hidden {
