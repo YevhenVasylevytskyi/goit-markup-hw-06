@@ -606,6 +606,7 @@ img {
 }
 
 .footer-email {
+  margin-left: auto;
   display: inline-block;
   width: 570px;
 }
